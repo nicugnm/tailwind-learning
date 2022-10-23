@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>TailwindCSS</title>
+  </head>
+  <body>
+    <!-- Positioning -->
+    <div class="relative w-1/2 h-12 bg-red-200">
+      <p>parent element</p>
+      <div class="absolute bottom-0 right-0 bg-red-500">
+        <p>absolute child</p>
+      </div>
+    </div>
+
+    <div class="relative h-32 w-32 bg-yellow-100">
+      <div class="absolute left-0 top-0 h-16 w-16 bg-yellow-300">
+        <p>new p</p>
+      </div>
+    </div>
+    <!-- Top left corner -->
+    <div class="relative h-32 w-32 bg-yellow-100">
+      <div class="absolute left-0 top-0 h-16 w-16 bg-yellow-300">
+        <p>new p</p>
+      </div>
+    </div>
+
+    <!-- Top right corner -->
+    <div class="relative h-32 w-32 bg-yellow-100">
+      <div class="absolute right-0 top-0 h-16 w-16 bg-yellow-300">
+        <p>new p right</p>
+      </div>
+    </div>
+
+    <!-- Bottom left corner -->
+    <div class="relative h-32 w-32 bg-yellow-100">
+      <div class="absolute bottom-0 left-0 h-16 w-16 bg-yellow-300">
+        <p>bottom left</p>
+      </div>
+    </div>
+
+    <!-- Bottom right corner -->
+    <div class="relative h-32 w-32 bg-yellow-100">
+      <div class="absolute right-0 bottom-0 h-16 w-16 bg-yellow-300">
+        <p>bottom right</p>
+      </div>
+    </div>
+
+    <!-- Span top edge -->
+    <div class="relative h-32 w-32 bg-blue-100">
+      <div class="absolute inset-y-2 inset-x-5 right-16 bg-yellow-300">
+        <p>of</p>
+      </div>
+    </div>
+
+    <!-- Span left edge -->
+
+    <!-- Span right edge -->
+
+    <!-- Span bottom edge -->
+
+    <!-- Display Classes -->
+    <div>
+      Lorem ipsum dolor sit amet,
+      <span class="inline font-bold">This is inline</span>
+      consectetur adipisicing elit. Accusantium aliqua
+      <span class="inline-block font-bold">
+        this is iline block
+      </span>m distinctio dolorum error explicabo fuga nulla pariatur quas, rem veritatis! Debitis incidunt quam repellendus tempore voluptate? Explicabo hic impedit repellat ullam. Ab accusantium aspernatur cum dolorum, eius est in incidunt ipsum laboriosam libero magnam maxime molestias nemo quod repellendus sit sunt ullam veritatis. Eaque eveniet fugit iste neque nulla quo?
+
+    </div>
+
+    <!-- Z-Index -->
+    <div class="relative h-36">
+      <div class="absolute left-10 w-24 h-24 bg-blue-100 z-40">1</div>
+      <div class="absolute w-24 left-20 h-24 bg-blue-200 z-20">2</div>
+      <div class="absolute w-24 left-40 h-24 bg-blue-300 z-20">3</div>
+      <div class="absolute w-24 left-60 h-24 bg-blue-400 z-40">4</div>
+      <div class="absolute w-24 left-80 h-24 bg-blue-500 z-60">5</div>
+    </div>
+
+    <!-- Floats -->
+    <div class="w-1/2">
+      <img class="h-48 w-48 float-right" src="../../assets/img/img1.jpg" alt="">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad animi beatae dignissimos et eveniet expedita fuga harum id inventore ipsum minima molestiae nam, quaerat quia sapiente sit tenetur. Consequatur, nulla.
+    </div>
+  </body>
+</html>
+
+<!-- Position Classes
+      static	    position: static;
+      fixed	      position: fixed;
+      absolute	  position: absolute;
+      relative	  position: relative;
+      sticky	    position: sticky;
+    -->
+
+<!-- Display Classes
+      block	            display: block;
+      inline-block	    display: inline-block;
+      inline	          display: inline;
+      flex	            display: flex;
+      inline-flex	      display: inline-flex;
+      table	            display: table;
+      grid	            display: grid;
+      inline-grid	      display: inline-grid;
+      contents	        display: contents;
+      list-item	        display: list-item;
+      hidden	          display: none;
+    -->
+
+<!-- Z-Index
+      z-0	    z-index: 0;
+      z-10	  z-index: 10;
+      z-20	  z-index: 20;
+      z-30	  z-index: 30;
+      z-40	  z-index: 40;
+      z-50	  z-index: 50;
+      z-auto	z-index: auto;
+    -->
+
+<!-- Float
+      float-right	  float: right;
+      float-left	  float: left;
+      float-none	  float: none;
+    -->
